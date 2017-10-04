@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-      <app-navi></app-navi>
-      <app-content></app-content>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 // Imports
-import content from './components/content.vue';
-import navi from './components/navi.vue';
+//import content from './components/content.vue';
+//import navi from './components/navi.vue';
+import home from './components/home.vue';
+import literatur from './components/literatur.vue';
 
 export default {
   name: 'app',
   components: {
-      'app-content': content,
-      'app-navi': navi
+      //'app-content': content,
+      //'app-navi': navi
+      'app-home': home,
+      'app-literatur': literatur
   },
   data () {
     return {
