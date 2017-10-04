@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <app-content></app-content>
-    </div>
+      <app-navi></app-navi>
+      <app-content></app-content>
+  </div>
 </template>
 
 <script>
 // Imports
 import content from './components/content.vue';
+import navi from './components/navi.vue';
 
 export default {
   name: 'app',
   components: {
-      'app-content': content
+      'app-content': content,
+      'app-navi': navi
   },
   data () {
     return {
-      msg: 'Mein Titel'
+
     }
   }
 }
