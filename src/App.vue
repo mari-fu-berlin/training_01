@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <app-navi></app-navi>
     <router-view></router-view>
   </div>
 </template>
@@ -7,17 +8,21 @@
 <script>
 // Imports
 //import content from './components/content.vue';
-//import navi from './components/navi.vue';
+import navi from './components/navi.vue';
 import home from './components/home.vue';
 import literatur from './components/literatur.vue';
+import page from './components/page.vue';
+import items from './components/items.vue';
 
 export default {
   name: 'app',
   components: {
       //'app-content': content,
-      //'app-navi': navi
+      'app-navi': navi,
       'app-home': home,
-      'app-literatur': literatur
+      'app-literatur': literatur,
+      'app-page': page,
+      'app-items': items
   },
   data () {
     return {
